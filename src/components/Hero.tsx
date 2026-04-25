@@ -45,7 +45,7 @@ export const Hero = () => {
           >
             <p className="text-primary font-medium mb-4 text-lg">Hi, I am</p>
             <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Dinesh <span className="gradient-text">Barri</span>
+              Raj Mahesh <span className="gradient-text">Sharma</span>
             </h1>
           </motion.div>
 
@@ -58,12 +58,11 @@ export const Hero = () => {
           >
             <TypeWriter
               words={[
-                'Data Analyst & Data Scientist',
-                'AI Agent Developer',
-                'Codeforces Master',
-                'ML Enthusiast',
-                'Dashboard Developer',
-                'Problem Solver'
+                'AI Engineer & Data Scientist',
+                'Multimodal Systems Architect',
+                'RAG Pipeline Builder',
+                'Computer Vision',
+                'Predictive Modeling'
               ]}
               className="text-primary font-semibold"
             />
@@ -75,9 +74,9 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-muted-foreground mb-8 max-w-xl leading-relaxed"
           >
-            Based in Dublin, Ireland 🇮🇪.
+            Based in Sillod, Maharashtra, India 🇮🇳.
             <br /><br />
-            I build intelligent data products—analytics pipelines, machine learning models, and n8n/RAG AI agents. My focus is on clean design, automation, and end-to-end systems that turn data into action. I enjoy breaking complex problems into simple, scalable solutions.
+            I build intelligent, scalable AI systems—architecting end-to-end pipelines from raw data to high-performance inference. My focus is on vector databases, computer vision, and bridging the gap between complex datasets and actionable insights.
           </motion.p>
 
           {/* Social Links */}
@@ -87,13 +86,13 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex gap-4 mb-10"
           >
-            <a href="https://github.com/dineshbarri" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://github.com/therajsharma20" target="_blank" rel="noopener noreferrer" className="social-icon">
               <Github size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/dinesh-barri/" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://linkedin.com/in/raj-sharma-datascience" target="_blank" rel="noopener noreferrer" className="social-icon">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:dineshbarri1997@gmail.com" className="social-icon">
+            <a href="mailto:r.m.sharma.1069@gmail.com" className="social-icon">
               <Mail size={20} />
             </a>
           </motion.div>
@@ -109,8 +108,8 @@ export const Hero = () => {
               View Projects
               <ArrowDown size={18} className="-rotate-90" />
             </a>
-            <a href="/Dinesh_Barri_Google_Resume.pdf"
-              download="Dinesh_Barri_Google_Resume.pdf"
+            <a href="/Raj_Sharma_Resume.pdf"
+              download="Raj_Sharma_Resume.pdf"
               className="btn-secondary flex items-center gap-2"
             >
               Resume
@@ -137,8 +136,8 @@ export const Hero = () => {
               className="relative w-full h-full rounded-[2rem] overflow-hidden border-2 border-primary/30 shadow-2xl bg-card/50 backdrop-blur-sm cursor-pointer"
             >
               <img
-                src="https://avatars.githubusercontent.com/u/28930465?v=4"
-                alt="Dinesh Barri"
+               src="/profile.png"
+                alt="Raj Sharma"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
 
