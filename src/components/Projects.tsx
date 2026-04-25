@@ -16,7 +16,7 @@ const projects = [
     description: 'An end-to-end pipeline that searches video footage using semantic text queries and zero-shot detection. Features a 1 FPS frame-extraction system using CLIP (ViT-B-32) and ChromaDB for sub-second vector retrieval, alongside cross-frame object tracking via IoU.',
     tags: ['Python', 'OpenCV', 'YOLOv8', 'CLIP', 'ChromaDB', 'PyTorch'],
     categories: ['👁️ Computer Vision', '🌐 Scalable Pipelines'],
-    github: 'https://github.com/therajsharma20', // Update this with your actual repo link later
+    github: 'https://github.com/therajsharma20/vidquery', // Update this with your actual repo link later
     live: '', // Add a live link later if you deploy it
     image: '/vidquery.png', 
   },
@@ -25,8 +25,8 @@ const projects = [
     description: 'Engineered a highly scalable Retrieval-Augmented Generation pipeline capable of processing 200MB PDFs. Built a LangChain text pipeline generating Llama-3.3-70b embeddings for sub-second retrieval, achieving inference speeds of 100+ tokens/sec via Streamlit and Groq API.',
     tags: ['Python', 'LangChain', 'Llama 3.3', 'ChromaDB', 'Groq API', 'Streamlit'],
     categories: ['🧠 AI Agents & RAG', '🌐 Scalable Pipelines'],
-    github: 'https://github.com/therajsharma20', // Update this with your actual repo link later
-    live: '',
+    github: 'https://github.com/therajsharma20/ai-pdf-agent', 
+    live: 'https://ai-pdf-agent.streamlit.app/',
     image: '/ragagent.png', 
   }
 ];
