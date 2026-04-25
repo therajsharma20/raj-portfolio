@@ -1,38 +1,38 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { TrendingUp, Brain, Code2, Trophy, Zap, Users } from 'lucide-react';
+import { TrendingUp, Brain, Code2, Database, Zap, Cpu } from 'lucide-react';
 
 const highlights = [
   {
-    icon: TrendingUp,
-    title: 'Data Analytics',
-    description: 'Transforming raw data into actionable insights through EDA, statistical modeling, and visualization.',
-  },
-  {
     icon: Brain,
-    title: 'Machine Learning',
-    description: 'Building predictive models, ML pipelines, and deploying intelligent systems.',
+    title: 'AI & Machine Learning',
+    description: 'Vector Databases, Multimodal Embeddings, Computer Vision, and Predictive Modeling (Scikit-learn).',
   },
   {
-    icon: Code2,
-    title: 'Clean Code',
-    description: 'Writing maintainable, scalable code that stands the test of time',
+    icon: Database,
+    title: 'Data Engineering',
+    description: 'Python, Pandas, NumPy, SQL, Data Visualization, and unstructured data processing.',
   },
   {
-    icon: Trophy,
-    title: 'Problem Solver',
-    description: 'Breaking down complex problems into scalable, efficient solutions.',
+    icon: Cpu,
+    title: 'Systems & Architecture',
+    description: 'Hardware-Accelerated Inference (CUDA) and high-performance scalable Data Pipelines.',
   },
   {
     icon: Zap,
-    title: 'AI Agent Developer',
-    description: 'Designing and deploying AI agents & automations using n8n and RAG workflows to connect knowledge, LLMs, and business systems for automated decisioning.',
+    title: 'Generative AI',
+    description: 'Fast-inference pipelines (SDXL/FLUX) and state-preserving integrations (IP-Adapters/ControlNet).',
   },
   {
-    icon: Users,
-    title: 'Collaboration',
-    description: 'Working effectively with cross-functional teams to deliver exceptional results',
+    icon: Code2,
+    title: 'Algorithmic Focus',
+    description: 'Strong foundation in Data Structures and Algorithms (DSA) for optimized backend architecture.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Performance Driven',
+    description: 'Bridging the gap between raw data and actionable insights in high-impact environments.',
   },
 ];
 
@@ -53,7 +53,7 @@ export const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Crafting data-driven solutions & intelligent systems
+            Architecting scalable AI systems and high-performance data pipelines
           </p>
         </motion.div>
 
@@ -68,10 +68,16 @@ export const About = () => {
             <h3 className="font-display text-xl font-semibold mb-4 gradient-text">Background</h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                With over 4 years of experience in <span className="text-foreground font-medium">Data Science and Data Analytics</span>, my career has been centered around turning data into clarity, intelligence, and real business value. I’ve worked across the full data lifecycle—exploring messy datasets, building ML models, creating dashboards, and developing automation systems that help teams work smarter. Over time, this naturally led me into <span className="text-primary font-medium">AI Agent development</span>, where I now build n8n workflows and RAG-powered assistants that combine domain knowledge with the capabilities of modern LLMs. For me, the most rewarding projects are the ones where analytics and AI come together to make someone’s work easier, faster, or more informed.
+                I am an <span className="text-foreground font-medium">AI Engineer and Data Scientist</span> focused on architecting scalable, multimodal AI systems and transforming complex datasets into actionable insights. I don't just analyze data; I build the pipelines that make it searchable, scalable, and intelligent.
               </p>
               <p>
-                What motivates me is solving problems that don’t have obvious answers. <span className="text-primary font-medium">Competitive programming</span> shaped the way I think—break the challenge down, explore patterns, and build solutions that are both simple and scalable. Whether I’m designing a data pipeline, optimizing a model, or creating an AI-driven automation, I aim to deliver tools that feel reliable, intuitive, and genuinely helpful. I’m driven by continuous learning, practical impact, and the belief that well-designed data systems can meaningfully improve how people and teams make decisions.
+                My core expertise lies at the intersection of data engineering and machine learning. I have a strong foundation in architecting <span className="text-primary font-medium">zero-shot semantic search pipelines</span>, leveraging vector databases, latent embeddings, and computer vision models. I specialize in bridging the gap between raw, unstructured data and high-performance inference.
+              </p>
+              <p>
+                <span className="text-primary font-medium">Continuous Growth:</span> I treat my tech stack as a constantly evolving toolkit. Currently, I am expanding my expertise into Generative AI workflows, focusing on fast-inference pipelines (SDXL/FLUX), state-preserving integrations (IP-Adapters/ControlNet), and asynchronous backend architectures.
+              </p>
+              <p>
+                I thrive in performance-driven environments where the code speaks for itself. I am actively seeking high-impact roles at product-based tech companies and am always eager to connect with founders and engineers building the next generation of AI.
               </p>
             </div>
           </motion.div>
