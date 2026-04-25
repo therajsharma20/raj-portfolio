@@ -5,111 +5,30 @@ import { ExternalLink, Github, ChevronRight } from 'lucide-react';
 
 const categories = [
   '🎯 All Projects',
-  '🌐 Web Development',
-  '🤖 AI & Automation',
-  '📊 PowerBI',
-  '📈 Tableau',
-  '🧠 ML & Data Science',
-  '💾 SQL',
+  '🧠 AI Agents & RAG',
+  '👁️ Computer Vision',
+  '🌐 Scalable Pipelines'
 ];
 
 const projects = [
   {
-    title: 'Olympic Data Analytics Dashboard',
-    description: 'Interactive Power BI dashboard visualizing 120 years of Olympic history (1896–2016). Comprehensive analysis of medal distributions, athlete performance, and global trends.',
-    tags: ['Power BI', 'Data Visualization', 'Data Analysis', 'Olympics'],
-    categories: ['📊 PowerBI'],
-    github: 'https://github.com/dineshbarri/Olympic-Data-Analytics-Dashboard-1896-2016-Power-BI-Insights',
-    live: 'https://www.novypro.com/project/interactive-olympics-analysis-',
-    image: '/project-olympic.png',
+    title: 'VidQuery: Multimodal AI Video Search Engine',
+    description: 'An end-to-end pipeline that searches video footage using semantic text queries and zero-shot detection. Features a 1 FPS frame-extraction system using CLIP (ViT-B-32) and ChromaDB for sub-second vector retrieval, alongside cross-frame object tracking via IoU.',
+    tags: ['Python', 'OpenCV', 'YOLOv8', 'CLIP', 'ChromaDB', 'PyTorch'],
+    categories: ['👁️ Computer Vision', '🌐 Scalable Pipelines'],
+    github: 'https://github.com/therajsharma20', // Update this with your actual repo link later
+    live: '', // Add a live link later if you deploy it
+    image: '/vidquery.png', 
   },
   {
-    title: 'Ireland Hotel Pricing & Ratings Analysis',
-    description: 'End-to-end analytics pipeline transforming raw hotel listings into actionable insights, revealing the relationship between price, ratings, and location across Ireland.',
-    tags: ['Python', 'SQL', 'Data Engineering', 'Netlify'],
-    categories: ['📊 PowerBI', '🧠 ML & Data Science', '💾 SQL'],
-    github: 'https://github.com/dineshbarri/ireland-hotel-pricing-ratings-analysis',
-    live: 'https://www.novypro.com/project/ireland-hotel-intelligence-dashboard',
-    image: '/project-hotel.png',
-  },
-  {
-    title: 'AI Video Factory - Veo3 Automation',
-    description: 'Automated video creation system powered by Google Veo3 and n8n — generate, store, and publish AI-generated videos with captions, Drive uploads, and YouTube automation.',
-    tags: ['AI', 'Automation', 'Google Gemini', 'n8n', 'YouTube'],
-    categories: ['🤖 AI & Automation'],
-    github: 'https://github.com/dineshbarri/AI-Video-Factory-Veo3-Automation-Pipeline',
-    image: '/project-ai-video.png',
-  },
-  {
-    title: 'Plemdo AI Enterprise Analytics',
-    description: 'From WhatsApp message to boardroom report in 60 seconds. AI-powered analytics that transforms conversations into consultant-grade intelligence.',
-    tags: ['AI', 'WhatsApp API', 'n8n', 'Data Analysis'],
-    categories: ['🤖 AI & Automation'],
-    github: 'https://github.com/dineshbarri/Plemdo-AI-Enterprise-Analytics',
-    image: '/project-plemdo.png',
-  },
-  {
-    title: 'Neural Digit Recognizer',
-    description: 'Interactive web app built with Flask and PyTorch that recognizes handwritten digits using a Convolutional Neural Network (CNN). Includes Docker deployment.',
-    tags: ['PyTorch', 'Flask', 'Deep Learning', 'Docker', 'CNN'],
-    categories: ['🌐 Web Development', '🧠 ML & Data Science'],
-    github: 'https://github.com/dineshbarri/Neural_Digit_Recognizer',
-    live: 'https://neural-digit-recognizer-t47d.onrender.com/',
-    image: '/project-neural.png',
-  },
-  {
-    title: 'Harry Potter Data Analytics',
-    description: 'Interactive Tableau dashboard uncovering fascinating insights from Harry Potter book sales, awards, and release trends across the wizarding universe.',
-    tags: ['Tableau', 'Data Visualization', 'EDA'],
-    categories: ['📈 Tableau'],
-    github: 'https://github.com/dineshbarri/Wizarding-Analytics-Harry-Potter-Through-Data-',
-    live: 'https://public.tableau.com/app/profile/dinesh.barri8170/viz/TheWizardingWorldUnveiledAHarryPotterDataJourney/Dashboard1',
-    image: '/project-hp.png',
-  },
-  {
-    title: 'Titanic Survivors Dashboard',
-    description: 'Visualization uncovering survival patterns based on gender, age, class, and fare. Interactive Tableau dashboard with comprehensive analysis.',
-    tags: ['Tableau', 'Data Visualization', 'Analytics'],
-    categories: ['📈 Tableau'],
-    github: 'https://github.com/dineshbarri/Titanic-Survivors-Analysis-Dashboard',
-    live: 'https://public.tableau.com/app/profile/dinesh.barri8170/viz/TitanicSurvivorsAnalysisDashboard/TitanicPassengersOverview',
-    image: '/project-titanic.png',
-  },
-  {
-    title: 'Netflix SQL Analysis',
-    description: 'End-to-end SQL analytics project powered by MySQL — uncovering global streaming trends, ratings, and regional insights from Netflix data.',
-    tags: ['MySQL', 'SQL', 'Data Analysis'],
-    categories: ['💾 SQL'],
-    github: 'https://github.com/dineshbarri/Netflix_Sql_Analysis',
-    image: '/project-netflix.png',
-  },
-  {
-    title: 'COVID-19 Ireland Dashboard',
-    description: 'Data-driven app visualizing Ireland\'s COVID-19 trends using open-source datasets. Interactive charts and real-time filtering.',
-    tags: ['JavaScript', 'HTML', 'CSS', 'Data Visualization'],
-    categories: ['🌐 Web Development'],
-    github: 'https://github.com/dineshbarri/covid19-ireland-dashboard',
-    live: 'https://dineshbarri-ireland-covid19-analysis.netlify.app/',
-    image: '/project-covid.png',
-  },
-  {
-    title: 'Retail Pulse Dashboard',
-    description: 'Comprehensive analytics platform empowering business leaders to explore sales, profit, and order trends across categories, time, and regions. Built with Tableau for actionable insights.',
-    tags: ['Tableau', 'Data Visualization', 'Business Intelligence', 'Analytics'],
-    categories: ['📈 Tableau'],
-    github: 'https://github.com/dineshbarri/Retail_Pulse-Dashboard',
-    live: 'https://public.tableau.com/app/profile/dinesh.barri8170/viz/RetailPulseDashboard/RetailAnalysisDashboarding',
-    image: '/project-retail-pulse.png',
-  },
-  {
-    title: 'Ireland Hotel Analytics Website',
-    description: 'Interactive analytics dashboard analyzing Irish hospitality market with real-time data visualization. Features interactive maps, price vs quality analysis, advanced filtering, and mobile-responsive design showcasing modern web development excellence.',
-    tags: ['JavaScript', 'HTML', 'CSS', 'ECharts', 'Leaflet', 'Data Visualization'],
-    categories: ['🌐 Web Development'],
-    github: 'https://github.com/dineshbarri/Ireland-Hotel-Analytics-Website',
-    live: 'https://ireland-hotels-dineshbarri.netlify.app/',
-    image: '/project-ireland-hotel-web.png',
-  },
+    title: 'AI Document Intelligence Agent (RAG System)',
+    description: 'Engineered a highly scalable Retrieval-Augmented Generation pipeline capable of processing 200MB PDFs. Built a LangChain text pipeline generating Llama-3.3-70b embeddings for sub-second retrieval, achieving inference speeds of 100+ tokens/sec via Streamlit and Groq API.',
+    tags: ['Python', 'LangChain', 'Llama 3.3', 'ChromaDB', 'Groq API', 'Streamlit'],
+    categories: ['🧠 AI Agents & RAG', '🌐 Scalable Pipelines'],
+    github: 'https://github.com/therajsharma20', // Update this with your actual repo link later
+    live: '',
+    image: '/ragagent.png', 
+  }
 ];
 
 export const Projects = () => {
@@ -137,7 +56,7 @@ export const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of my recent work in data analytics, machine learning, and AI automation
+            A selection of my recent work in multimodal systems, computer vision, and high-performance AI pipelines.
           </p>
         </motion.div>
 
@@ -153,7 +72,7 @@ export const Projects = () => {
               key={category}
               onClick={() => {
                 setActiveCategory(category);
-                setShowAll(false); // Reset show all when changing category
+                setShowAll(false); 
               }}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === category
                 ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/25 scale-105'
