@@ -5,77 +5,28 @@ import { ChevronDown } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Data Analyst',
-    company: 'Cognizant',
-    image: '/cognizant.png',
-    period: 'Jun 2019 - Jul 2023',
-    location: 'Hyderabad, India · On-site',
+    title: 'Chief Minister (Student Campus Lead)',
+    company: 'Career Katta Initiative (MITSC)',
+    image: '', 
+    period: '07/2025 - Present',
+    location: 'Maharashtra, India',
     description:
-      'Delivered analytics solutions and automated reporting systems for Google Maps operations, driving real-time insights and operational efficiency across large-scale processes. Specialized in scalable dashboards, ETL automation, SQL analytics, and production reporting pipelines.',
+      'Leading the campus-level implementation of a state-wide skill development program in collaboration with MITSC. Focused on bridging the gap between students and industry experts to significantly enhance peer employability and career readiness.',
     achievements: [
-      'Built end-to-end analytics dashboards that reduced bug resolution time by 40% through automated alerts, SLO/ETA triggers, and structured monitoring.',
-      'Developed impact analysis frameworks for call operations, improving call-success accuracy by 25% and supporting a 15% increase in human-connect rates.',
-      'Automated ETL & data quality workflows using Python and SQL, reducing manual effort by 60% and improving data reliability.',
-      'Created performance intelligence dashboards featuring 25+ KPIs to streamline workforce planning and improve operational decision-making.',
+      'Directed a 12-member leadership team to spearhead skill development initiatives across the campus.',
+      'Orchestrated campus-wide awareness campaigns and daily digital workshops for career guidance (e.g., "IAS Aaplya Bhetila").',
+      'Successfully engaged and onboarded 100+ students into various career-focused development programs.',
+      'Acted as the primary liaison between college administration and the student body to facilitate access to industry experts.',
     ],
     technologies: [
-      'SQL',
-      'Python',
-      'Looker (PLX)',
-      'BigQuery',
-      'ETL Automation',
-      'Google Apps Script',
-      'Power BI',
-      'GCP',
-      'Data Quality & Monitoring',
-      'GenAI-assisted Automation',
+      'Leadership',
+      'Team Management',
+      'Program Strategy',
+      'Public Speaking',
+      'Student Outreach',
+      'Event Coordination'
     ],
-  },
-  {
-    title: 'Machine Learning Engineer Intern',
-    company: 'Atharvo',
-    image: '/atharvo.png',
-    period: 'Feb 2019 – Apr 2019',
-    location: 'Karnataka, India',
-    description:
-      'Developed and optimized machine learning solutions for real-world applications, including feature engineering, model evaluation, and scalable workflows to support data-driven decisions and improve performance metrics.',
-    achievements: [
-      'Built and fine-tuned supervised learning models to increase prediction accuracy and stability.',
-      'Created robust data preprocessing flows for feature engineering and dataset transformation.',
-      'Collaborated with cross-functional teams to integrate ML outputs into usable workflows.',
-    ],
-    technologies: [
-      'Python',
-      'Scikit-learn',
-      'Pandas',
-      'NumPy',
-      'Jupyter',
-      'Feature Engineering',
-      'Model Evaluation',
-    ],
-  },
-  {
-    title: 'Software Engineer',
-    company: 'HackerEarth',
-    image: '/hackerearth.png',
-    period: 'Mar 2017 – Feb 2019',
-    location: 'Bengaluru, Karnataka, India · Remote',
-    description:
-      'Developed algorithm-driven programming challenges and assessment content to support global technical hiring and competitive coding events. Focused on high-quality problem design and robustness validations.',
-    achievements: [
-      'Authored algorithmic problems across multiple difficulty levels for global contests.',
-      'Developed test suites with edge-case coverage and optimal execution constraints.',
-      'Improved problem quality metrics through clearer problem statements and reference solutions.',
-      'Scaled content creation that supported thousands of developers and hiring teams.',
-    ],
-    technologies: [
-      'Algorithms',
-      'Data Structures',
-      'Problem Design',
-      'Complexity Analysis',
-      'Competitive Programming',
-    ],
-  },
+  }
 ];
 
 export const Experience = () => {
@@ -101,10 +52,10 @@ export const Experience = () => {
           className="mb-16 text-center"
         >
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            Professional <span className="gradient-text">Journey</span>
+            Leadership <span className="gradient-text">Journey</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From data analytics to automation and ML-driven insights, here’s my experience delivering business value with scalable solutions.
+            Driving impact through team leadership, community building, and state-wide skill development initiatives.
           </p>
         </motion.div>
 
@@ -214,7 +165,7 @@ export const Experience = () => {
                             {/* Technologies */}
                             <div>
                               <h5 className="flex items-center gap-2 text-sm font-semibold text-foreground mb-3">
-                                <span className="text-primary">💻</span> Technologies Used
+                                <span className="text-primary">💡</span> Core Skills Demonstrated
                               </h5>
                               <div className="flex flex-wrap gap-2">
                                 {exp.technologies.map((tech) => (
