@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Mail, Send, MapPin, Linkedin, Github, Phone } from 'lucide-react';
+import { Mail, Send, MapPin, Linkedin, Github } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 import emailjs from '@emailjs/browser';
 
@@ -15,11 +15,12 @@ export const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      // NOTE: You will need to replace these with your own free EmailJS keys later!
       const result = await emailjs.sendForm(
-        'service_rus0kuj',
-        'template_tlvoipb',
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
         e.currentTarget,
-        'GucQZNTsN9ZVLCPg7'
+        'YOUR_PUBLIC_KEY'
       );
 
       if (result.text === 'OK') {
@@ -57,7 +58,7 @@ export const Contact = () => {
             Let's <span className="gradient-text">Connect</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to discuss data science opportunities? I'd love to hear from you!
+            Have a high-impact AI project in mind or want to discuss engineering opportunities? I'd love to hear from you.
           </p>
         </motion.div>
 
@@ -72,7 +73,7 @@ export const Contact = () => {
 
             <div className="space-y-6">
               <a
-                href="mailto:dineshbarri1997@gmail.com"
+                href="mailto:r.m.sharma.1069@gmail.com"
                 className="flex items-center gap-4 glass-card p-4 hover:border-primary/30 transition-all duration-300 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -80,20 +81,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-medium group-hover:text-primary transition-colors">dineshbarri1997@gmail.com</p>
-                </div>
-              </a>
-
-              <a
-                href="tel:+353892033146"
-                className="flex items-center gap-4 glass-card p-4 hover:border-primary/30 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Phone className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="font-medium group-hover:text-primary transition-colors">+353 89 203 3146</p>
+                  <p className="font-medium group-hover:text-primary transition-colors">r.m.sharma.1069@gmail.com</p>
                 </div>
               </a>
 
@@ -103,7 +91,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">Dublin, Ireland 🇮🇪</p>
+                  <p className="font-medium">Sillod, Maharashtra, India 🇮🇳</p>
                 </div>
               </div>
             </div>
@@ -112,13 +100,13 @@ export const Contact = () => {
             <div className="mt-8">
               <p className="text-sm text-muted-foreground mb-4">Connect on social media</p>
               <div className="flex gap-3">
-                <a href="https://www.linkedin.com/in/dinesh-barri/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://linkedin.com/in/raj-sharma-datascience" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <Linkedin size={20} />
                 </a>
-                <a href="https://github.com/dineshbarri" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://github.com/therajsharma20" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <Github size={20} />
                 </a>
-                <a href="mailto:dineshbarri1997@gmail.com" className="social-icon">
+                <a href="mailto:r.m.sharma.1069@gmail.com" className="social-icon">
                   <Mail size={20} />
                 </a>
               </div>
