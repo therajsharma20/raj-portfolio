@@ -27,7 +27,8 @@ export const Hero = () => {
         className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-primary/10 blur-3xl"
       />
 
-      <div className="section-container relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 pt-20">
+      {/* Vertical centering restored (items-center) and top-padding removed */}
+      <div className="section-container relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
         
         {/* Left Column: Text Content */}
         <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -53,12 +54,14 @@ export const Hero = () => {
                 'AI Engineer & Data Scientist',
                 'Multimodal Systems Architect',
                 'RAG Pipeline Builder',
-                'Computer Vision'
+                'Computer Vision',
+                'Predictive Modeling'
               ]}
               className="text-primary font-semibold"
             />
           </motion.div>
 
+          {/* FULL ORIGINAL INFORMATION RESTORED */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -67,63 +70,83 @@ export const Hero = () => {
           >
             Based in Sillod, Maharashtra, India 🇮🇳.
             <br /><br />
-            I build intelligent, scalable AI systems—architecting end-to-end pipelines from raw data to high-performance inference.
+            I build intelligent, scalable AI systems—architecting end-to-end pipelines from raw data to high-performance inference. My focus is on vector databases, computer vision, and bridging the gap between complex datasets and actionable insights.
           </motion.p>
 
-          {/* Social Icons */}
-          <div className="flex gap-4 mb-10">
-            <a href="https://github.com/therajsharma20" target="_blank" rel="noopener noreferrer" className="p-2 border border-primary/20 rounded-full hover:bg-primary/10 transition-colors">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="flex gap-4 mb-10"
+          >
+            <a href="https://github.com/therajsharma20" target="_blank" rel="noopener noreferrer" className="social-icon">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com/in/raj-sharma-datascience" target="_blank" rel="noopener noreferrer" className="p-2 border border-primary/20 rounded-full hover:bg-primary/10 transition-colors">
+            <a href="https://linkedin.com/in/raj-sharma-datascience" target="_blank" rel="noopener noreferrer" className="social-icon">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:r.m.sharma.1069@gmail.com" className="p-2 border border-primary/20 rounded-full hover:bg-primary/10 transition-colors">
+            <a href="mailto:r.m.sharma.1069@gmail.com" className="social-icon">
               <Mail size={20} />
             </a>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-wrap gap-4">
-            <a href="#projects" className="btn-primary">View Projects</a>
-            <a href="/Raj_Sharma_Resume.pdf" download className="btn-secondary flex items-center gap-2">
-              Resume <Download size={18} />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="flex flex-wrap gap-4 justify-center lg:justify-start"
+          >
+            <a href="#projects" className="btn-primary">
+              View Projects
+              <ArrowDown size={18} className="-rotate-90" />
             </a>
-          </div>
+            <a href="/Raj_Sharma_Resume.pdf"
+              download="Raj_Sharma_Resume.pdf"
+              className="btn-secondary flex items-center gap-2"
+            >
+              Resume
+              <Download size={18} />
+            </a>
+          </motion.div>
         </div>
 
-        {/* Right Column: Image */}
+        {/* Right Column: Image - Padding removed to stop box from going down */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="flex-1 flex justify-center lg:justify-end relative lg:pt-32"
+          className="flex-1 flex justify-center lg:justify-end relative"
         >
           <div className="relative w-64 h-64 sm:w-80 sm:h-80">
-            {/* Decorative Background Shape */}
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-[2rem] rotate-6 transform scale-105 blur-sm" />
 
             {/* Image Container */}
             <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="relative w-full h-full rounded-[2rem] overflow-hidden border-2 border-primary/30 shadow-2xl bg-card p-1"
+              whileHover={{ scale: 1.05, rotate: 2 }}
+              transition={{ duration: 0.3 }}
+              className="relative w-full h-full rounded-[2rem] overflow-hidden border-2 border-primary/30 shadow-2xl bg-card/50 backdrop-blur-sm cursor-pointer"
             >
               <img
                 src="/profile.png"
                 alt="Raj Sharma"
-                className="w-full h-full object-cover object-top rounded-[1.8rem]"
+                /* FIX: object-top pulls the image down so your head isn't cut off.
+                   Added p-1 to create a tiny margin inside the border.
+                */
+                className="w-full h-full object-cover object-top p-1"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60 pointer-events-none" />
             </motion.div>
 
             {/* Floating Badge */}
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-4 -right-4 bg-black/80 border border-primary/30 p-3 rounded-xl shadow-xl backdrop-blur-md z-20"
+              className="absolute -bottom-6 -right-6 bg-card border border-primary/30 p-4 rounded-xl shadow-xl backdrop-blur-md"
             >
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                <span className="text-xs font-medium text-white">Open to Work</span>
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
+                <span className="text-sm font-medium text-foreground">Open to Work</span>
               </div>
             </motion.div>
           </div>
