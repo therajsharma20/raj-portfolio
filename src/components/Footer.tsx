@@ -1,14 +1,9 @@
-import { Github, Linkedin, Mail, BookOpen, BarChart3, Database, Code2 } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/dinesh-barri/', label: 'LinkedIn' },
-  { icon: Github, href: 'https://github.com/dineshbarri', label: 'GitHub' },
-  { icon: BookOpen, href: 'https://medium.com/@dineshbarri', label: 'Medium' },
-  { icon: BarChart3, href: 'https://www.kaggle.com/dinuuu', label: 'Kaggle' },
-  { icon: Database, href: 'https://public.tableau.com/app/profile/dinesh.barri8170/vizzes', label: 'Tableau Public' },
-  { icon: BarChart3, href: 'https://my.novypro.com/dinesh-barri', label: 'Power BI' },
-  { icon: Code2, href: 'https://codeforces.com/profile/dinesh_barri', label: 'Codeforces' },
-  { icon: Mail, href: 'mailto:dineshbarri1997@gmail.com', label: 'Email' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/raj-sharma-datascience', label: 'LinkedIn' },
+  { icon: Github, href: 'https://github.com/therajsharma20', label: 'GitHub' },
+  { icon: Mail, href: 'mailto:r.m.sharma.1069@gmail.com', label: 'Email' },
 ];
 
 export const Footer = () => {
@@ -18,8 +13,8 @@ export const Footer = () => {
         <div className="flex flex-col items-center">
           {/* Logo */}
           <a href="#" className="font-display text-2xl font-bold mb-6">
-            <span className="gradient-text">Dinesh</span>
-            <span className="text-foreground"> Barri</span>
+            <span className="gradient-text">Raj Mahesh</span>
+            <span className="text-foreground"> Sharma</span>
           </a>
 
           {/* Social Links */}
@@ -51,8 +46,8 @@ export const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Dinesh Barri. All rights reserved.</p>
-            <p className="mt-1">Data Analyst | Data Scientist | AI Agent Developer</p>
+            <p>© {new Date().getFullYear()} Raj Mahesh Sharma. All rights reserved.</p>
+            <p className="mt-1">AI Engineer | Data Scientist</p>
           </div>
         </div>
       </div>
