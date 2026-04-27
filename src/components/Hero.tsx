@@ -26,19 +26,11 @@ export const Hero = () => {
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-primary/10 blur-3xl"
       />
-      <motion.div
-        animate={{ y: [0, 20, 0], x: [0, -20, 0] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-1/4 left-1/4 w-96 h-96 rounded-full bg-accent/10 blur-3xl"
-      />
 
-      {/* FIXED: Added pt-24 to push content down and adjusted alignment */}
-      <div className="section-container relative z-10 flex flex-col-reverse lg:flex-row items-center lg:items-center justify-between gap-12 pt-24 lg:pt-0">
+      <div className="section-container relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 pt-20">
         
         {/* Left Column: Text Content */}
         <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-
-          {/* Title */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -50,7 +42,6 @@ export const Hero = () => {
             </h1>
           </motion.div>
 
-          {/* Subtitle */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -62,8 +53,7 @@ export const Hero = () => {
                 'AI Engineer & Data Scientist',
                 'Multimodal Systems Architect',
                 'RAG Pipeline Builder',
-                'Computer Vision',
-                'Predictive Modeling'
+                'Computer Vision'
               ]}
               className="text-primary font-semibold"
             />
@@ -77,46 +67,28 @@ export const Hero = () => {
           >
             Based in Sillod, Maharashtra, India 🇮🇳.
             <br /><br />
-            I build intelligent, scalable AI systems—architecting end-to-end pipelines from raw data to high-performance inference. My focus is on vector databases, computer vision, and bridging the gap between complex datasets and actionable insights.
+            I build intelligent, scalable AI systems—architecting end-to-end pipelines from raw data to high-performance inference.
           </motion.p>
 
-          {/* Social Links */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex gap-4 mb-10"
-          >
-            <a href="https://github.com/therajsharma20" target="_blank" rel="noopener noreferrer" className="social-icon">
+          {/* Social Icons */}
+          <div className="flex gap-4 mb-10">
+            <a href="https://github.com/therajsharma20" target="_blank" rel="noopener noreferrer" className="p-2 border border-primary/20 rounded-full hover:bg-primary/10 transition-colors">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com/in/raj-sharma-datascience" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://linkedin.com/in/raj-sharma-datascience" target="_blank" rel="noopener noreferrer" className="p-2 border border-primary/20 rounded-full hover:bg-primary/10 transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:r.m.sharma.1069@gmail.com" className="social-icon">
+            <a href="mailto:r.m.sharma.1069@gmail.com" className="p-2 border border-primary/20 rounded-full hover:bg-primary/10 transition-colors">
               <Mail size={20} />
             </a>
-          </motion.div>
+          </div>
 
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="flex flex-wrap gap-4 justify-center lg:justify-start"
-          >
-            <a href="#projects" className="btn-primary">
-              View Projects
-              <ArrowDown size={18} className="-rotate-90" />
+          <div className="flex flex-wrap gap-4">
+            <a href="#projects" className="btn-primary">View Projects</a>
+            <a href="/Raj_Sharma_Resume.pdf" download className="btn-secondary flex items-center gap-2">
+              Resume <Download size={18} />
             </a>
-            <a href="/Raj_Sharma_Resume.pdf"
-              download="Raj_Sharma_Resume.pdf"
-              className="btn-secondary flex items-center gap-2"
-            >
-              Resume
-              <Download size={18} />
-            </a>
-          </motion.div>
+          </div>
         </div>
 
         {/* Right Column: Image */}
@@ -124,57 +96,37 @@ export const Hero = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="flex-1 flex justify-center lg:justify-end relative"
+          className="flex-1 flex justify-center lg:justify-end relative lg:pt-32"
         >
-          {/* FIXED: Added mt-8 lg:mt-0 to ensure it doesn't creep too high */}
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80 mt-8 lg:mt-0">
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80">
             {/* Decorative Background Shape */}
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-[2rem] rotate-6 transform scale-105 blur-sm" />
 
             {/* Image Container */}
             <motion.div
-              whileHover={{ scale: 1.05, rotate: 2 }}
-              transition={{ duration: 0.3 }}
-              className="relative w-full h-full rounded-[2rem] overflow-hidden border-2 border-primary/30 shadow-2xl bg-card/50 backdrop-blur-sm cursor-pointer"
+              whileHover={{ scale: 1.02 }}
+              className="relative w-full h-full rounded-[2rem] overflow-hidden border-2 border-primary/30 shadow-2xl bg-card p-1"
             >
               <img
-               src="/profile.png"
+                src="/profile.png"
                 alt="Raj Sharma"
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                className="w-full h-full object-cover object-top rounded-[1.8rem]"
               />
-
-              {/* Overlay Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
             </motion.div>
 
             {/* Floating Badge */}
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -right-6 bg-card border border-primary/30 p-4 rounded-xl shadow-xl backdrop-blur-md"
+              className="absolute -bottom-4 -right-4 bg-black/80 border border-primary/30 p-3 rounded-xl shadow-xl backdrop-blur-md z-20"
             >
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-                <span className="text-sm font-medium text-foreground">Open to Work</span>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                <span className="text-xs font-medium text-white">Open to Work</span>
               </div>
             </motion.div>
           </div>
-        </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="text-muted-foreground"
-          >
-            <ArrowDown size={24} />
-          </motion.div>
         </motion.div>
       </div>
     </section>
