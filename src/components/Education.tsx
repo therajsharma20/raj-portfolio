@@ -1,37 +1,22 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { GraduationCap, Calendar, MapPin } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
 
 const educationData = [
   {
-    degree: 'MS in Data Science',
-    institution: 'Dublin Business School',
-    location: 'Dublin, Ireland',
-    period: 'Sep 2023 - Sep 2024',
-    // grade: 'Distinction', // Grade removed as per instruction
-    logo: 'DBS',
-    description: 'Comprehensive program covering machine learning, statistical analysis, data visualization, and applied data science methodologies.',
+    degree: 'Bachelor of Science (B.Sc.) in Computer Science',
+    institution: 'Yeshwantrao Chavan College',
+    location: 'Maharashtra, India',
+    period: 'Expected 05/2027',
+    grade: '8.44 / 10 CGPA', 
+    logo: 'BSc',
+    description: 'A rigorous academic program establishing a strong foundation in computational theory, software engineering, and advanced mathematics.',
     learnings: [
-      'Advanced machine learning and predictive modeling',
-      'Statistical analysis and hypothesis testing',
-      'Data visualization and storytelling with Tableau and Power BI',
-      'Big data processing and cloud computing'
-    ]
-  },
-  {
-    degree: 'Bachelor of Technology - BTech, Computer Science',
-    institution: 'Gayatri Vidya Parishad College of Engineering (Autonomous)',
-    location: 'India',
-    period: '2015 - 2019',
-    // grade: '8.4/10', // Grade removed as per instruction
-    logo: 'GVP',
-    description: 'Strong foundation in computer science fundamentals and software development.',
-    learnings: [
-      'Strong foundations in data structures, algorithms, OS, DBMS',
-      'Hands-on software development experience',
-      'Object-oriented programming & application building',
-      'Problem-solving and algorithmic thinking'
+      'Data Structures & Algorithms',
+      'Database Management Systems (SQL)',
+      'Object-Oriented Programming (OOP)',
+      'Applied Mathematics & Statistics'
     ]
   }
 ];
@@ -50,10 +35,10 @@ export const Education = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            <span className="gradient-text">Education</span>
+            Academic <span className="gradient-text">Background</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Academic foundation and continuous learning
+            The theoretical foundation driving my practical implementations.
           </p>
         </motion.div>
 
@@ -67,7 +52,7 @@ export const Education = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="flex-1 min-w-[260px] max-w-md bg-card/70 rounded-2xl shadow-lg hover:shadow-xl border border-border px-6 py-8 flex flex-col md:min-h-[410px] mx-auto md:mx-0 backdrop-blur-[2px] transition-all duration-300"
+                className="flex-1 min-w-[260px] max-w-xl bg-card/70 rounded-2xl shadow-lg hover:shadow-xl border border-border px-6 py-8 flex flex-col md:min-h-[410px] mx-auto backdrop-blur-[2px] transition-all duration-300"
                 style={{ boxShadow: '0 8px 32px 0 hsl(var(--card) / 0.25)' }}
               >
                 <div className="flex items-center gap-4 mb-4">
@@ -83,7 +68,8 @@ export const Education = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-wrap gap-3 text-sm text-muted-foreground mb-3">
+                
+                <div className="flex flex-wrap gap-3 text-sm text-muted-foreground mb-4">
                   <div className="flex items-center gap-2 bg-secondary/50 px-3 py-1.5 rounded-full">
                     <Calendar size={14} className="text-primary" />
                     <span>{edu.period}</span>
@@ -92,12 +78,18 @@ export const Education = () => {
                     <MapPin size={14} className="text-primary" />
                     <span>{edu.location}</span>
                   </div>
+                  <div className="flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-full">
+                    <Award size={14} className="text-primary" />
+                    <span className="font-bold text-primary">{edu.grade}</span>
+                  </div>
                 </div>
+                
                 <p className="text-muted-foreground mb-4 leading-normal text-balance">
                   {edu.description}
                 </p>
+                
                 <div className="flex-1 flex flex-col justify-end">
-                  <p className="text-sm font-semibold text-foreground mb-1">Key Learnings:</p>
+                  <p className="text-sm font-semibold text-foreground mb-2">Relevant Coursework:</p>
                   <ul className="space-y-2 mb-2">
                     {edu.learnings.map((learning, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
