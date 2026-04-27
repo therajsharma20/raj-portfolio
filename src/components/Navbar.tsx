@@ -35,7 +35,7 @@ export const Navbar = () => {
       <nav className="section-container py-4">
         <div className="flex items-center justify-between">
           <a href="#" className="font-display text-xl font-bold">
-            <span className="gradient-text">{`{ DB }`}</span>
+            <span className="gradient-text">{`{ RS }`}</span>
           </a>
 
           {/* Desktop Navigation */}
