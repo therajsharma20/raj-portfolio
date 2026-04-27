@@ -1,7 +1,9 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "raj-sharma-portfolio",
+  "author": "Raj Mahesh Sharma",
+  "description": "Portfolio of Raj Mahesh Sharma - AI Engineer & Data Scientist",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
