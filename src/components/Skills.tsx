@@ -4,32 +4,28 @@ import { useRef } from 'react';
 
 const skillCategories = [
   {
-    title: 'Programming & Analytics',
-    skills: ['Python', 'Java', 'C++', 'C', 'JavaScript', 'TypeScript', 'R', 'SQL', 'Pandas', 'NumPy', 'Scikit-learn', 'SciPy', 'Statsmodels'],
+    title: 'AI & Machine Learning',
+    skills: ['PyTorch', 'Computer Vision', 'YOLOv8', 'CLIP (ViT)', 'Predictive Modeling', 'Scikit-learn'],
   },
   {
-    title: 'AI Agents & Intelligent Automation',
-    skills: ['LLM Integrations', 'n8n Agent Development', 'RAG Pipelines', 'AI Automation', 'Knowledge Base Engineering'],
+    title: 'GenAI & RAG Systems',
+    skills: ['LangChain', 'Llama 3.3', 'ChromaDB', 'Vector Databases', 'SDXL / FLUX', 'ControlNet'],
   },
   {
-    title: 'Data Visualization & BI',
-    skills: ['Tableau', 'Power BI', 'Matplotlib', 'Seaborn', 'Plotly', 'Looker Studio', 'Excel Pivot Tables'],
+    title: 'Data Science & Engineering',
+    skills: ['Python', 'Pandas', 'NumPy', 'SQL', 'Data Visualization', 'Exploratory Data Analysis'],
   },
   {
-    title: 'Machine Learning & AI',
-    skills: ['Supervised ML', 'Unsupervised ML', 'Regression', 'Classification', 'Clustering', 'NLP', 'Deep Learning', 'PyTorch'],
+    title: 'Systems & Architecture',
+    skills: ['Hardware Inference (CUDA)', 'Scalable Data Pipelines', 'Streamlit', 'API Integration (Groq)', 'Asynchronous Backend'],
   },
   {
-    title: 'Databases & Cloud',
-    skills: ['MySQL', 'PostgreSQL', 'SQL Server', 'MongoDB', 'AWS S3', 'AWS EC2', 'Microsoft Azure', 'Google Cloud'],
+    title: 'Core Computer Science',
+    skills: ['Data Structures', 'Algorithms (DSA)', 'Object-Oriented Programming', 'Problem Solving', 'Optimization'],
   },
   {
-    title: 'Tools & Platforms',
-    skills: ['Git/GitHub', 'Jupyter', 'VS Code', 'Docker', 'JIRA', 'Confluence', 'Trello', 'MS Visio', 'Lucidchart'],
-  },
-  {
-    title: 'Algorithms & Competitive Programming',
-    skills: ['Dynamic Programming', 'Greedy Algorithms', 'Data Structures', 'Time Complexity', 'Optimization', 'Problem Solving'],
+    title: 'Developer Tools & Libraries',
+    skills: ['Git/GitHub', 'Docker', 'OpenCV', 'Jupyter', 'VS Code'],
   },
 ];
 
@@ -47,10 +43,10 @@ export const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            Skills & <span className="gradient-text">Expertise</span>
+            Technical <span className="gradient-text">Arsenal</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Technologies I've worked with in real-world projects and professional environments
+            The specialized tools, frameworks, and architecture I leverage to build high-performance AI systems.
           </p>
         </motion.div>
 
@@ -61,7 +57,7 @@ export const Skills = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
-              className="glass-card p-6"
+              className="glass-card p-6 border border-primary/10 hover:border-primary/30 transition-colors"
             >
               <h3 className="font-display font-semibold text-lg mb-4 text-primary">
                 {category.title}
