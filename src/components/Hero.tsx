@@ -32,7 +32,9 @@ export const Hero = () => {
         className="absolute bottom-1/4 left-1/4 w-96 h-96 rounded-full bg-accent/10 blur-3xl"
       />
 
-      <div className="section-container relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+      {/* FIXED: Added pt-24 to push content down and adjusted alignment */}
+      <div className="section-container relative z-10 flex flex-col-reverse lg:flex-row items-center lg:items-center justify-between gap-12 pt-24 lg:pt-0">
+        
         {/* Left Column: Text Content */}
         <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
 
@@ -124,7 +126,8 @@ export const Hero = () => {
           transition={{ duration: 0.8 }}
           className="flex-1 flex justify-center lg:justify-end relative"
         >
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80">
+          {/* FIXED: Added mt-8 lg:mt-0 to ensure it doesn't creep too high */}
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 mt-8 lg:mt-0">
             {/* Decorative Background Shape */}
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-[2rem] rotate-6 transform scale-105 blur-sm" />
 
