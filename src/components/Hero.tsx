@@ -32,7 +32,6 @@ export const Hero = () => {
         className="absolute bottom-1/4 left-1/4 w-96 h-96 rounded-full bg-accent/10 blur-3xl"
       />
 
-
       <div className="section-container relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
         {/* Left Column: Text Content */}
         <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -44,8 +43,8 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <p className="text-primary font-medium mb-4 text-lg">Hi, I am</p>
-            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Raj Mahesh <span className="gradient-text">Sharma</span>
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+              Raj <span className="gradient-text">Sharma</span>
             </h1>
           </motion.div>
 
