@@ -16,12 +16,12 @@ const Index = () => {
   const [showAllCertifications, setShowAllCertifications] = useState(false);
 
   useEffect(() => {
-    document.title = 'Dinesh Barri | Data Analyst & Data Scientist Portfolio';
+    document.title = 'Raj Sharma | AI Engineer & Data Scientist';
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content',
-        'Portfolio of Dinesh Barri - Data Analyst, Data Scientist, and Codeforces Master based in Dublin, Ireland. Expertise in Python, SQL, Machine Learning, Tableau, Power BI, and competitive programming.'
+        'Portfolio of Raj Mahesh Sharma - AI Engineer and Data Scientist based in Amravati, Maharashtra, India. Expertise in Machine Learning, Computer Vision, and RAG Systems.'
       );
     }
   }, []);
@@ -41,19 +41,7 @@ const Index = () => {
           <Certifications />
         ) : (
           <>
-            <Certifications limit={6} />
-            <div className="text-center pb-12">
-              <motion.button
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                onClick={() => setShowAllCertifications(true)}
-                className="btn-primary"
-              >
-                View All Certifications
-                <ChevronRight size={18} />
-              </motion.button>
-            </div>
+            <Certifications />
           </>
         )}
 
