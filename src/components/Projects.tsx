@@ -12,6 +12,15 @@ const categories = [
 
 const projects = [
   {
+    title: 'Dynamic Multi-Agent Orchestrator',
+    description: 'Architected a Dockerized multi-agent orchestrator using FastAPI and LangGraph, dynamically routing tasks across 4 specialized sub-agents. Integrated distinct tool interfaces (Python sandbox, SQL) streaming token-by-token responses via Server-Sent Events. Engineered a dynamic context manager and adversarial evaluation pipeline, deployed as a REST API with zero-touch Docker Compose setup.',
+    tags: ['Python', 'LangGraph', 'FastAPI', 'Docker', 'SQL', 'SSE'],
+    categories: ['🧠 AI Agents & RAG', '🌐 Scalable Pipelines'],
+    github: 'https://github.com/therajsharma20/your-repo-name', // Update with actual repo link
+    live: '',
+    image: '/dynamic-multiagent.png', 
+  },
+  {
     title: 'VidQuery: Multimodal AI Video Search Engine',
     description: 'An end-to-end pipeline that searches video footage using semantic text queries and zero-shot detection. Features a 1 FPS frame-extraction system using CLIP (ViT-B-32) and ChromaDB for sub-second vector retrieval, alongside cross-frame object tracking via IoU.',
     tags: ['Python', 'OpenCV', 'YOLOv8', 'CLIP', 'ChromaDB', 'PyTorch'],
