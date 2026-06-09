@@ -15,7 +15,7 @@ const projects = [
     description: 'Architected a Dockerized multi-agent orchestrator using FastAPI and LangGraph, dynamically routing tasks across 4 specialized sub-agents. Integrated distinct tool interfaces (Python sandbox, SQL) streaming token-by-token responses via Server-Sent Events. Engineered a dynamic context manager and adversarial evaluation pipeline, deployed as a REST API with zero-touch Docker Compose setup.',
     tags: ['Python', 'LangGraph', 'FastAPI', 'Docker', 'SQL', 'SSE'],
     categories: ['🧠 AI Agents & RAG', '🌐 Scalable Pipelines'],
-    github: 'https://github.com/therajsharma20/your-repo-name', // Update with actual repo link
+    github: 'https://github.com/therajsharma20/Dynamic-Multi-Agent-Orchestrator',
     live: '',
     image: '/dynamic-multiagent.png', 
   },
